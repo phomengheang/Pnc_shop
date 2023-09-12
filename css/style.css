@@ -1,0 +1,552 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background:#01303f; */
+    /* background: linear-gradient(110deg, #01303f 60%, #01242e 60%); */
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    background: linear-gradient(to right,#01303f 0%,#01303f 50%, #011f29 50%,#011f29 100%);
+}
+
+.container{
+    margin:0% 9%;
+}
+.container-nav{
+    background: #02567a;
+    display: flex;
+    border-bottom: 5px rgba(255, 255, 255, 0.274) solid;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* width:82%; */
+    margin-top: 0px;
+}
+.nav-right, .nav-left{
+    display: flex;
+    
+}
+.nav-left{
+    margin-left: 50px;
+    width: 20%;
+}
+.nav-right{
+    justify-content: end;
+    width: 90%;
+}
+
+.nav-right ul{
+    display: flex;
+    margin-right: 50px;
+}
+.nav-right ul li, .nav-left ul li{
+    list-style: none;
+    margin: 20px ;
+    font-size: 20px;
+}
+.nav-right ul li:nth-last-child(1){
+    display: flex;
+}
+.nav-right ul li:nth-last-child(1) a{
+    margin: 0px 10px;
+}
+
+.nav-right ul li a,.nav-left ul li a{
+    display: flex;
+    text-decoration:none;
+    color: #fff;
+}
+i{
+    margin-right: 10px;
+}
+#active{
+    color: orange ;
+    font-weight: bold;
+}
+#active:hover{
+    color: rgb(153, 100, 1) ;
+}
+.nav-right ul li a:hover,.dropdown span:hover {
+    color:orange;
+}
+/* --------------------- dropdown -----------------------  */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown span{
+    color: white
+}
+.dropdown span:hover{
+    color:orange
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a{
+    background: #000;
+    font-size: 17px;
+    padding: 10px;
+}
+.dropdown-content a:hover{
+    background: rgba(63, 38, 0, 0.651);
+    color:white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+.nav-right ul li a span{
+    font-size: 11px;
+    padding:5px  8px;
+    background: #002738;
+    border-radius: 50%;
+}
+
+/* ------------------------- finish navbar -------------------------    */
+main{
+    background: #6696ac;
+    padding-top: 80px;
+    padding-bottom: 2px ;
+}
+
+.main-img img{
+    width: 100%;
+}
+.main-card{
+    background:rgba(0, 0, 0, 0.521) url(../images/Banner_Dell.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.mac-pc{
+    background:rgba(0, 0, 0, 0.658) url(../images/macbook-pro-2021-header-scaled.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.asus-pc{
+    background:rgba(0, 0, 0, 0.658) url(../images/Unbox-VivoBook-15-OLED-1-2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.lenovo-pc{
+    background:rgba(0, 0, 0, 0.658) url(../images/1641771191_ThinkPad-Plus-FB-780x470.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.mac-pc:hover,.main-card:hover,.asus-pc:hover,.lenovo-pc:hover{
+    background-blend-mode: unset;
+    color: black;
+}
+.container-card{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.main-card,.category-card{
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+    margin-top: 20px;
+    height: 300px;
+}
+.main-card{
+    width: 96.5%;
+    height: 150px;
+}
+.main-card h1{
+    color:rgb(255, 255, 255) ;
+    font-weight: bold;
+    margin: auto;
+}
+.category-card{
+    width: 30% ;
+    height: 200px;
+}
+.category-card h3{
+    color: rgb(196, 196, 196);
+    margin: auto;
+}
+.btn{
+    padding: 10px 20px;
+    background: teal;
+    border-radius: 10px;
+    border:none;
+    margin: auto;
+}
+.btn a{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: orange;
+}
+/* ___________________________________ */
+
+#main-intro{
+    margin: 40px;
+    margin-bottom: -50px;
+    color: #014357;
+}
+#Intro-products{
+    margin-left: 30px;
+    margin-top: -10px;
+    color: #202020;
+}
+.product-list{
+    margin: 25px;
+    padding-bottom: 20px;
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    background: #4d7581;
+    width: 23%;
+    height:auto;
+    border-radius: 5px;
+}
+.top-card{
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.card-title h4,.card-price h5{
+    margin: 3px;
+    color: white;
+}
+.card-price span,.card-rate span{
+    color: orange;
+}
+
+.bottom-card{
+    background: #002738;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.add-basket-btn{
+    border:none;
+    padding:3px 5px;
+    border-radius:5px;
+    cursor: pointer;
+    background: orange;
+    color: black;
+    font-weight: bold;
+}
+.add-basket-btn:hover{
+    background: rgb(160, 105, 3);
+}
+.category-name{
+    color:white
+}
+.card:hover{
+    background: #3a5c66;
+    box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75);
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75);
+    -moz-box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75);
+}
+/* ____________________________________ */
+footer{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    background: #011a25;
+    margin-top: -20px;
+    padding: 0px 50px  ;
+    border-top: 5px solid orange;
+}
+footer p{
+    color: white;
+    margin: 40px;
+}
+.footer-right p{
+    margin: 15px 0px;
+}
+.group-icons a i{
+    margin-left: 15px;
+}
+
+/* ________________________ shop  */
+
+.main-top{
+    margin-top: 30px;
+}
+.search-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+}
+#search-box{
+    padding: 10px;
+    border:none;
+    outline: none;
+}
+#btn-search{
+   border:none;
+   background: rgb(158, 157, 157);
+   cursor: pointer;
+}
+#btn-search:hover{
+    background: orange;
+}
+.categories-list{
+    display: flex;
+    padding:20px;
+}
+.categories-list a{
+    margin:0px 10px;
+    color: #000;
+}
+.categories-list a:hover{
+    color: orange;
+}
+
+/* ...................  */
+
+.main-about{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.main-about h1{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.group-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 15%;
+}
+.card-delivery, .card-shipping, .card-quality{
+    margin: 10px;
+    width: 200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #011f29 ;
+    color: white;
+}
+.card-delivery h4, .card-shipping h4, .card-quality h4{
+    margin: 15px;
+}
+
+.card-delivery span, .card-shipping span, .card-quality span{
+    font-size:13px;
+}
+.card-delivery:hover, .card-shipping:hover, .card-quality:hover{
+    /* box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75);
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75);
+    -moz-box-shadow: 0px 0px 17px 5px rgba(4,21,28,0.75); */
+    margin: 5px;
+}
+.about-content{
+    display: flex;
+    padding:20px 70px;
+}
+
+.about-img img{
+    width: 90%;
+    background: #000;
+}
+.about-paragraph{
+    width: 90%;
+    text-align: justify;
+}
+.about-paragraph span{
+    color: rgb(247, 160, 0) !important;
+    font-weight: bold !important;
+    font-size:25px;
+}
+.paragraph-bottom,.group-icons{
+    display: flex;
+}
+.paragraph-bottom {
+    justify-content: space-between;
+}
+.paragraph-bottom .btn{
+    margin: 0px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+}
+  
+h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: orange;
+}
+.main-card h1::after{
+    background-color: rgba(255, 240, 211, 0);
+}
+.paragraph-bottom .group-icons i{
+    color: black;
+}
+.paragraph-bottom .group-icons i:hover{
+    color: orange;
+}
+.group-icons{
+    display: flex;
+}
+.group-icons i{
+    color: white;
+    font-size: 30px;
+}
+.group-icons i:hover{
+    color: orange;
+}
+.about-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding:0px 70px;  
+}
+.about-story h1{
+    margin: 10px 0px;
+}
+.about-story p span{
+    color: orange;
+    font-weight: bolder;
+    font-size:30px;
+}
+
+/* ---------------- contact us --------------  */
+.contact-intro{
+    padding:0% 10%;
+}
+.contact-intro p{
+    margin: 5px 0px;
+}
+.contact-intro h1{
+    margin-bottom: 10px;
+}
+.contact-us-from{
+    display: flex;
+    width: 82%;
+    padding: 2% 9%;
+
+}
+.contact-us-from form{
+    width: 60%;
+    background: rgb(173, 173, 173);
+    padding: 30px;
+    border-radius:10px 0px 0px 10px;
+}
+.contact-us-from form h2, .contact-us-from form p{
+    margin: 0px;
+}
+.contact-us-from form,.contact-us-info{
+    border: 1px solid rgb(65, 63, 63);
+}
+.contact-us-from form p{
+    font-size:15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.group-input{
+    display: flex;
+    justify-content: space-between;
+}
+.group-input input{
+    padding: 6px 6px;
+    box-sizing: border-box;
+    width:100%;
+    border-radius: 4px;
+    border:1.5px solid gray;
+}
+.group-input div{
+    width: 48%;
+}
+.group-input label,.feedback label{
+    font-size:14px;
+    font-weight: bold;
+}
+.feedback label{
+    margin-top: 15px;
+}
+.group-input div{
+    margin-top: 15px;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+}
+.feedback .btn{
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+.feedback textarea{
+    border-radius: 5px;
+}
+.contact-us-info{
+    width: 40%;
+    padding: 30px;
+    background: rgb(204, 203, 203);
+    border-radius:0px 10px 10px 0px;
+}
+.group-info div{
+    display: flex;
+    margin:30px 0px;
+}
+.group-info div span, .group-info div a{
+    margin-left: 5px;
+}
+.group-info div:nth-of-type(1) i{
+    padding: 7px 8px;
+}
+.group-info div i{
+    padding: 7px;
+    font-size: 12px;     
+    background: rgb(255, 255, 255);
+    border-radius:50%;
+    color:rgb(0, 0, 0);
+}
+.group-info div span{
+    margin-top: 5px; 
+    font-size:13px          
+}
+.contact-us-from h1,.contact-us-info h2, .map h1{
+    margin-top: 0px;
+    font-size:30px;
+}
+.map h1{
+    margin-top: 10px;
+    margin-left: 9%;
+}
+.contact-icons a i{
+    margin-right: 20px;
+    margin-top: 25px;
+    font-size: 25px;
+    color: #000;
+}
+.contact-icons a i:hover{
+    color: orange;
+}
+hr{
+    height: 1px;
+    background-color: black;
+}
