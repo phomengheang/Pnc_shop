@@ -6,7 +6,6 @@ body{
     /* background: linear-gradient(110deg, #01303f 60%, #01242e 60%); */
     /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
     background: linear-gradient(to right,#01303f 0%,#01303f 50%, #011f29 50%,#011f29 100%);
-background: red;
 }
 
 .container{
